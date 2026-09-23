@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Karakter - Chiikawa Runner</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="select-container">
+        <!-- Background -->
+        <div class="bg-pattern"></div>
+        
+        <!-- Header -->
+        <header class="select-header">
+            <button id="backBtn" class="back-button">← Kembali</button>
+            <h1 class="select-title">Pilih Karakter</h1>
+            <p class="select-subtitle">Pilih temanmu untuk berlari!</p>
+        </header>
+        
+        <!-- Character Cards -->
+        <div class="character-grid">
+            <!-- Usagi Card -->
+            <div class="character-card" data-character="usagi">
+                <div class="card-inner">
+                    <div class="character-image-container">
+                        <div class="character-emoji usagi">🐰</div>
+                        <div class="character-glow usagi-glow"></div>
+                    </div>
+                    <h2 class="character-name">USAGI</h2>
+                    <p class="character-desc">Kelinci putih yang ceria dan penuh semangat! Suka makan wortel.</p>
+                    <div class="coin-type">
+                        <span class="coin-icon">🥕</span>
+                        <span class="coin-label">Kumpulkan Wortel!</span>
+                    </div>
+                    <div class="character-stats">
+                        <div class="stat">
+                            <span class="stat-label">Kecepatan</span>
+                            <div class="stat-bar"><div class="stat-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Lompatan</span>
+                            <div class="stat-bar"><div class="stat-fill" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hachiware Card -->
+            <div class="character-card" data-character="hachiware">
+                <div class="card-inner">
+                    <div class="character-image-container">
+                        <div class="character-emoji hachiware">🐱</div>
+                        <div class="character-glow hachiware-glow"></div>
+                    </div>
+                    <h2 class="character-name">HACHIWARE</h2>
+                    <p class="character-desc">Kucing belang yang ramah dan suka menari! Suka makan ikan.</p>
+                    <div class="coin-type">
+                        <span class="coin-icon">🐟</span>
+                        <span class="coin-label">Kumpulkan Ikan!</span>
+                    </div>
+                    <div class="character-stats">
+                        <div class="stat">
+                            <span class="stat-label">Kecepatan</span>
+                            <div class="stat-bar"><div class="stat-fill" style="width: 80%"></div></div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Lompatan</span>
+                            <div class="stat-bar"><div class="stat-fill" style="width: 95%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chiikawa Card -->
+            <div class="character-card" data-character="chiikawa">
+                <div class="card-inner">
+                    <div class="character-image-container">
+                        <div class="character-emoji chiikawa">🍙</div>
+                        <div class="character-glow chiikawa-glow"></div>
+                    </div>
+                    <h2 class="character-name">CHIIKAWA</h2>
+                    <p class="character-desc">Makhluk kecil putih yang imut dan penyayang! Suka makan onigiri.</p>
+                    <div class="coin-type">
+                        <span class="coin-icon">🍙</span>
+                        <span class="coin-label">Kumpulkan Onigiri!</span>
+                    </div>
+                    <div class="character-stats">
+                        <div class="stat">
+                            <span class="stat-label">Kecepatan</span>
+                            <div class="stat-bar"><div class="stat-fill" style="width: 75%"></div></div>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Lompatan</span>
+                            <div class="stat-bar"><div class="stat-fill" style="width: 80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Selected Info -->
+        <div class="selected-info">
+            <p id="selectedText">Klik karakter untuk memilih</p>
+        </div>
+    </div>
+    
+    <!-- Audio System -->
+    <script src="js/audio.js"></script>
+    <script src="js/select.js"></script>
+</body>
+</html>
